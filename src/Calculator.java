@@ -6,7 +6,7 @@ import javax.swing.border.LineBorder;
 
 
 public class Calculator {
-    public static void main(String[] args) {
-        
-    }
+    int boardWidth = 360;
+    int boardHeight = 560;
+    
 }
