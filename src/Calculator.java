@@ -15,7 +15,7 @@ public class Calculator {
     Color customOrange = new Color(255, 149, 0);
 
     String[] buttonValues = {
-        "AC", "", "", "",
+        "AC", "+/-", "", "",
         "", "", "", "",
         "", "", "", "", 
         "", "", "", ""
