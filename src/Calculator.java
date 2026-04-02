@@ -18,7 +18,6 @@ public class Calculator {
         "", "", "", "",
         "", "", "", "", 
         "", "", "", ""
-
     };
 
     JFrame frame = new JFrame("Calculator");
