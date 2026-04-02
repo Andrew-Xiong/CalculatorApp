@@ -15,11 +15,14 @@ public class Calculator {
     Color customOrange = new Color(255, 149, 0);
 
     String[] buttonValues = {
-        "AC", "+/-", "", "",
-        "", "", "", "",
-        "", "", "", "", 
-        "", "", "", ""
+        "AC", "+/-", "%", "÷", 
+        "7", "8", "9", "×", 
+        "4", "5", "6", "-",
+        "1", "2", "3", "+",
+        "0", ".", "√", "="
     };
+    String[] rightSymbols = {"÷", "×", "-", "+", "="};
+    String[] topSymbols = {"AC", "+/-", "%"};
 
     JFrame frame = new JFrame("Calculator");
     JLabel displayLabel = new JLabel();
