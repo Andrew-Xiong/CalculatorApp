@@ -12,6 +12,7 @@ public class Calculator {
     Color customLightGrey = new Color(212, 212, 210);
     Color customDarkGrey = new Color(80, 80, 80);
     Color customBlack = new Color(28, 28, 28);
+    Color customOrange = new Color(255, 149, 0);
 
     String[] buttonValues = {
         "AC", "", "", "",
@@ -48,5 +49,7 @@ public class Calculator {
 
         //Panel for numbers/operations
         //display
+
+        //displayPanel.add(displayButtons);
     }
 }
