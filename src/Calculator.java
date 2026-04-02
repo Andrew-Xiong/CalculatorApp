@@ -19,7 +19,7 @@ public class Calculator {
         "", "", "", "", 
         "", "", "", ""
 
-    }
+    };
 
     JFrame frame = new JFrame("Calculator");
     JLabel displayLabel = new JLabel();
