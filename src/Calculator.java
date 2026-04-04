@@ -55,6 +55,6 @@ public class Calculator {
 
         //displayPanel.add(displayButtons);
 
-        //show commit
+        //show commits
     }
 }
