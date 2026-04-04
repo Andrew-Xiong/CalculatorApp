@@ -52,5 +52,7 @@ public class Calculator {
         frame.add(displayPanel, BorderLayout.NORTH);
 
         buttonsPanel.setLayout(new GridLayout(5,4));
+        buttonsPanel.add(displayPanel);
+        frame.add(buttonsPanel);
     }
 }
