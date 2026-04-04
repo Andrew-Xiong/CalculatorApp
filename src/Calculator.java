@@ -28,6 +28,7 @@ public class Calculator {
     JLabel displayLabel = new JLabel();
     JPanel displayPanel = new JPanel();
     JPanel displayButtons = new JPanel();
+    JPanel buttonsPanel = new JPanel();
 
     Calculator(){
         frame.setVisible(true);
@@ -50,11 +51,6 @@ public class Calculator {
         displayPanel.add(displayLabel);
         frame.add(displayPanel, BorderLayout.NORTH);
 
-        //Panel for numbers/operations
-        //display
-
-        //displayPanel.add(displayButtons);
-
-        //show commits
+        buttonsPanel.setLayout(new GridLayout(5,4));
     }
 }
