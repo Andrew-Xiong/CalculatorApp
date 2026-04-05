@@ -54,5 +54,11 @@ public class Calculator {
         buttonsPanel.setLayout(new GridLayout(5,4));
         buttonsPanel.add(displayPanel);
         frame.add(buttonsPanel);
+
+        for (int i = 0; i < buttonValues.length; i++){
+            JButton button = new JButton();
+            String buttonValue = buttonValues[i];
+            button.setFont(new F);
+        }  
     }
 }
