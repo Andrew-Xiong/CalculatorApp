@@ -52,7 +52,7 @@ public class Calculator {
         frame.add(displayPanel, BorderLayout.NORTH);
 
         buttonsPanel.setLayout(new GridLayout(5,4));
-        buttonsPanel.add(displayPanel);
+        buttonsPanel.setBackground(customBlack);
         frame.add(buttonsPanel);
 
         for (int i = 0; i < buttonValues.length; i++){
@@ -60,6 +60,8 @@ public class Calculator {
             String buttonValue = buttonValues[i];
             button.setFont(new Font("Arial", Font.PLAIN, 30));
             button.setText(buttonValue);
+            button.setFocusable(false);
+            //if 
             buttonsPanel.add(button);
         }  
     }
