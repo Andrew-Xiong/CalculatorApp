@@ -54,14 +54,20 @@ public class Calculator {
         buttonsPanel.setLayout(new GridLayout(5,4));
         buttonsPanel.setBackground(customBlack);
         frame.add(buttonsPanel);
-
+        
         for (int i = 0; i < buttonValues.length; i++){
             JButton button = new JButton();
             String buttonValue = buttonValues[i];
             button.setFont(new Font("Arial", Font.PLAIN, 30));
             button.setText(buttonValue);
             button.setFocusable(false);
-            //if 
+            if (Arrays.asList(topSymbols).contains(buttonValue)){
+                button.setBackground(customLightGrey);
+                button.setForeground(customBlack);
+            } else if (Arrays.asList(rightSymbols).contains(buttonValue)) {
+                button.setBackground(customOrange);
+                button.setForeground(customBlack);
+            }
             buttonsPanel.add(button);
         }  
     }
