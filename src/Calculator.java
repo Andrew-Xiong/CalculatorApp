@@ -67,6 +67,9 @@ public class Calculator {
             } else if (Arrays.asList(rightSymbols).contains(buttonValue)) {
                 button.setBackground(customOrange);
                 button.setForeground(customBlack);
+            } else {
+                button.setBackground(customDarkGrey);
+                button.setForeground(customBlack);
             }
             buttonsPanel.add(button);
         }  
