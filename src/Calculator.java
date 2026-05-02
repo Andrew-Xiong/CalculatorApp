@@ -61,6 +61,7 @@ public class Calculator {
             button.setFont(new Font("Arial", Font.PLAIN, 30));
             button.setText(buttonValue);
             button.setFocusable(false);
+            button.setBorder(new LineBorder(customBlack));
             if (Arrays.asList(topSymbols).contains(buttonValue)){
                 button.setBackground(customLightGrey);
                 button.setForeground(customBlack);
@@ -69,7 +70,7 @@ public class Calculator {
                 button.setForeground(customBlack);
             } else {
                 button.setBackground(customDarkGrey);
-                button.setForeground(customBlack);
+                button.setForeground(Color.white);
             }
             buttonsPanel.add(button);
         }  
