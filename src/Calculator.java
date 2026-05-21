@@ -30,6 +30,10 @@ public class Calculator {
     JPanel displayButtons = new JPanel();
     JPanel buttonsPanel = new JPanel();
 
+    String A = "0";
+    String operator = null;
+    String B = null;
+
     Calculator(){
         frame.setVisible(true);
         frame.setSize(boardWidth, boardHeight);
