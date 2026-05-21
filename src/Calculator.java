@@ -86,7 +86,7 @@ public class Calculator {
 
                     } else if (Arrays.asList(topSymbols).contains(buttonValue)){
                         if (buttonValue == "AC") {
-
+                            clearAll();
                         } else if (buttonValue == "+/-"){
 
                         } else if (buttonValue == "%"){
@@ -108,5 +108,9 @@ public class Calculator {
                 }
             });
         }  
+    }
+
+    void clearAll (){
+        
     }
 }
