@@ -111,6 +111,8 @@ public class Calculator {
     }
 
     void clearAll (){
-        
+        A = "0";
+        operator = null;
+        B = null;
     }
 }
