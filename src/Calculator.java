@@ -87,6 +87,7 @@ public class Calculator {
                     } else if (Arrays.asList(topSymbols).contains(buttonValue)){
                         if (buttonValue == "AC") {
                             clearAll();
+                            displayLabel.setText("0");
                         } else if (buttonValue == "+/-"){
 
                         } else if (buttonValue == "%"){
