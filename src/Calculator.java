@@ -50,15 +50,17 @@ public class Calculator {
         displayLabel.setText("0");
         displayLabel.setOpaque(true);
 
-        //
+        //Sets the display to the top of the calculator
         displayPanel.setLayout(new BorderLayout());
         displayPanel.add(displayLabel);
         frame.add(displayPanel, BorderLayout.NORTH);
 
+        //creates layout of calculator
         buttonsPanel.setLayout(new GridLayout(5,4));
         buttonsPanel.setBackground(customBlack);
         frame.add(buttonsPanel);
         
+
         for (int i = 0; i < buttonValues.length; i++){
             JButton button = new JButton();
             String buttonValue = buttonValues[i];
@@ -66,6 +68,8 @@ public class Calculator {
             button.setText(buttonValue);
             button.setFocusable(false);
             button.setBorder(new LineBorder(customBlack));
+
+            //creating colorways for the different buttons based on functionality
             if (Arrays.asList(topSymbols).contains(buttonValue)){
                 button.setBackground(customLightGrey);
                 button.setForeground(customBlack);
@@ -78,6 +82,7 @@ public class Calculator {
             }
             buttonsPanel.add(button);
 
+            //button functionality
             button.addActionListener(new ActionListener() {
                 public void actionPerformed(ActionEvent e){
                     JButton button = (JButton) e.getSource();
