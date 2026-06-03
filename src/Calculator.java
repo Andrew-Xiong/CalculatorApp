@@ -97,7 +97,7 @@ public class Calculator {
                                 if (operator == "+") {
                                     displayLabel.setText(removeZeroDecimal(numA+numB));
                                 } else if (operator == "-") {
-                                    displayLabel.setText(removeZeroDecimal(numA+numB));
+                                    displayLabel.setText(removeZeroDecimal(numA-numB));
                                 } else if (operator == "×") {
                                     displayLabel.setText(removeZeroDecimal(numA*numB));
                                 } else if (operator == "÷") {
