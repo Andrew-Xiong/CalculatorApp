@@ -87,6 +87,7 @@ public class Calculator {
                 public void actionPerformed(ActionEvent e){
                     JButton button = (JButton) e.getSource();
                     String buttonValue = button.getText();
+                    
                     if (Arrays.asList(rightSymbols).contains(buttonValue)){
                         if (buttonValue == "="){
                             if (A != null) {
@@ -127,19 +128,23 @@ public class Calculator {
                             numDisplay /= 100;
                             displayLabel.setText(removeZeroDecimal(numDisplay));
                         }
-                    } else {
-                        if (buttonValue == "."){
-                            if (!displayLabel.getText().contains(buttonValue)){
-                                displayLabel.setText(displayLabel.getText() + buttonValue);
-                            }
-                        } else if ("0123456789".contains(buttonValue)){
-                            if (displayLabel.getText() == "0"){
-                                displayLabel.setText(buttonValue);
-                            } else {
-                                displayLabel.setText(displayLabel.getText() + buttonValue);
-                            }
+                    } else if (buttonValue == "."){
+                        if (!displayLabel.getText().contains(buttonValue)){
+                            displayLabel.setText(displayLabel.getText() + buttonValue);
                         }
-                    }
+                    } else if ("0123456789".contains(buttonValue)){
+                        if (displayLabel.getText() == "0"){
+                            displayLabel.setText(buttonValue);
+                        } else {
+                            displayLabel.setText(displayLabel.getText() + buttonValue);
+                        }
+                    } else {
+                        if (buttonValue == "√") {
+                            double numDisplay = Double.parseDouble(displayLabel.getText());
+                            numDisplay = Math.pow(numDisplay, .5);
+                            displayLabel.setText(removeZeroDecimal(numDisplay));
+                        }
+                    }  
                 }
             });
         }  
